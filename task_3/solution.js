@@ -5,12 +5,13 @@ function renderCartItem(item) {
     
     let itemCountText = ""; 
     itemCountText = itemCountText + product.count; 
-    itemCountText = itemCountText + ` * `; 
+    itemCountText = itemCountText + ` × `; 
     itemCountText = itemCountText + product.price; 
     itemCountText = itemCountText + ` ₽ = `;
-    let sum = product.price * product.count; 
     itemCountText = itemCountText + product.count; 
     itemCountText = itemCountText + ` ₽`;
+
+    let sum = product.price * product.count; 
 
     // product - объект вида {id: id, title: title, count: count, price: price}
     // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
